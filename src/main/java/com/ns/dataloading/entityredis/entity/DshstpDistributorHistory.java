@@ -1,6 +1,7 @@
 package com.ns.dataloading.entityredis.entity;
 
 import org.springframework.data.redis.core.RedisHash;
+import org.springframework.data.redis.core.index.Indexed;
 
 import javax.persistence.Id;
 import java.io.Serializable;
@@ -11,15 +12,25 @@ import java.io.Serializable;
 @RedisHash("DSHSTP_DistributorHistory")
 public class DshstpDistributorHistory implements Serializable {
     private Long id;
+    @Indexed
     private Long htctlDistCtrl;
+    @Indexed
     private String hthscdHistCode;
+    @Indexed
     private Long htseqSequence;
+    @Indexed
     private String htdscgOldData;
+    @Indexed
     private Integer htpyrYearOfChange;
+    @Indexed
     private Integer htpmoMonthOfChange;
+    @Indexed
     private String htdatcChangeDate;
+    @Indexed
     private String htuserChangeUserId;
+    @Indexed
     private String htwprcWebProcessed;
+    @Indexed
     private String htiprcICentrisProcessed;
 
     @Id

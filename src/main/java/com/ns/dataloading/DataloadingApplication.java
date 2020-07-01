@@ -13,7 +13,7 @@ public class DataloadingApplication {
 
 	public static void main(String[] args) {
 		ConfigurableApplicationContext ac =SpringApplication.run(DataloadingApplication.class, args);
-		RepositoryCall repocall=ac.getBean(RepositoryCall.class);
+		LoadData repocall=ac.getBean(LoadData.class);
 		repocall.init();
 	}
 

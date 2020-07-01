@@ -6,18 +6,18 @@ import javax.persistence.Id;
 import java.io.Serializable;
 import java.math.BigDecimal;
 
-@RedisHash("BOMCFG_GlobalMultMonthMoveupConfig")
+@RedisHash("BOMCFG_GlobalMultMonthMoveupConfig1")
 public class BomcfgGlobalMultMonthMoveupConfig implements Serializable {
-    private Long id;
-    private String icopcyOpCmpy;
-    private BigDecimal iccthrCaseCrThreshold;
-    private Integer icmnbamMaxNbActMonthsBack;
-    private Integer icstryrStartYear;
-    private Integer icstrmoStartMonth;
-    private String icedteEntryDate;
-    private String iceusrEntryUser;
-    private String iccdteChangeDate;
-    private String iccusrChangeUser;
+    public Long id;
+    public String icopcyOpCmpy;
+    public BigDecimal iccthrCaseCrThreshold;
+    public Integer icmnbamMaxNbActMonthsBack;
+    public Integer icstryrStartYear;
+    public Integer icstrmoStartMonth;
+    public String icedteEntryDate;
+    public String iceusrEntryUser;
+    public String iccdteChangeDate;
+    public String iccusrChangeUser;
 
     @Id
  // @GeneratedValue(strategy = GenerationType.IDENTITY)// @Column(name = "ID", nullable = false)
