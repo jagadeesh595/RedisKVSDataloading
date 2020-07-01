@@ -204,7 +204,7 @@ public class LoadData {
 
         System.out.println("RunConfig - Start :" + System.currentTimeMillis());
         try (
-                Reader reader = Files.newBufferedReader(Paths.get("RunConfig.csv"), Charset.forName("UTF-8"));
+                Reader reader =  new BufferedReader(new InputStreamReader(new FileInputStream("RunConfig.csv"),"utf-8"));
                 CSVReader csvReader = new CSVReader(reader);
         ) {
             String[] nextRecord;
@@ -245,7 +245,7 @@ public class LoadData {
 
         System.out.println("OrmstpOrder - Start :" + System.currentTimeMillis());
         try (
-                Reader reader = Files.newBufferedReader(Paths.get("OrmstpOrder.csv"), Charset.forName("UTF-8"));
+                Reader reader =  new BufferedReader(new InputStreamReader(new FileInputStream("OrmstpOrder.csv"),"utf-8"));
                 CSVReader csvReader = new CSVReader(reader);
         ) {
             String[] nextRecord;
@@ -337,7 +337,7 @@ public class LoadData {
 
         System.out.println("DsmstpDistributor - Start :" + System.currentTimeMillis());
         try (
-                Reader reader = Files.newBufferedReader(Paths.get("Dsmstp_Distributor.csv"), Charset.forName("UTF-8"));
+                Reader reader =  new BufferedReader(new InputStreamReader(new FileInputStream("Dsmstp_Distributor.csv"),"utf-8"));
                 CSVReader csvReader = new CSVReader(reader);
         ) {
             String[] nextRecord;
@@ -433,7 +433,7 @@ public class LoadData {
 
         System.out.println("BoqalpBonusQualification - Start :" + System.currentTimeMillis());
         try (
-                Reader reader = Files.newBufferedReader(Paths.get("BoqalpBonusQualification.csv"), Charset.forName("UTF-8"));
+                Reader reader =  new BufferedReader(new InputStreamReader(new FileInputStream("BoqalpBonusQualification.csv"),"utf-8"));
                 CSVReader csvReader = new CSVReader(reader);
         ) {
             String[] nextRecord;
@@ -483,7 +483,7 @@ public class LoadData {
 
         System.out.println("BohstpBonusHistory - Start :" + System.currentTimeMillis());
         try (
-                Reader reader = Files.newBufferedReader(Paths.get("BOHSTP_BonusHistory.csv"), Charset.forName("UTF-8"));
+                Reader reader =  new BufferedReader(new InputStreamReader(new FileInputStream("BOHSTP_BonusHistory.csv"),"utf-8"));
                 CSVReader csvReader = new CSVReader(reader);
         ) {
             String[] nextRecord;
@@ -563,7 +563,7 @@ public class LoadData {
 
         System.out.println("BomcfgGlobalMultMonthMoveupConfig - Start :" + System.currentTimeMillis());
         try (
-                Reader reader = Files.newBufferedReader(Paths.get("BOMCFG_GlobalMultMonthMoveupConfig.csv"), Charset.forName("UTF-8"));
+                Reader reader =  new BufferedReader(new InputStreamReader(new FileInputStream("BOMCFG_GlobalMultMonthMoveupConfig.csv"),"utf-8"));
                 CSVReader csvReader = new CSVReader(reader);
         ) {
             String[] nextRecord;
@@ -611,7 +611,7 @@ public class LoadData {
 
         System.out.println("BowqlpWhsQualOrdTrack - Start :" + System.currentTimeMillis());
         try (
-                Reader reader = Files.newBufferedReader(Paths.get("BowqlpWhsQualOrdTrack.csv"), Charset.forName("UTF-8"));
+                Reader reader =  new BufferedReader(new InputStreamReader(new FileInputStream("BowqlpWhsQualOrdTrack.csv"),"utf-8"));
                 CSVReader csvReader = new CSVReader(reader);
         ) {
             String[] nextRecord;
@@ -667,10 +667,10 @@ public class LoadData {
             System.out.println(e.getMessage());
         }
         System.out.println("BowqlpWhsQualOrdTrack - End: " + System.currentTimeMillis());
-
+//
         System.out.println("DshstpDistributorHistory - Start :" + System.currentTimeMillis());
         try (
-                Reader reader = Files.newBufferedReader(Paths.get("DshstpDistHistory.csv"), Charset.forName("UTF-8"));
+                Reader reader =  new BufferedReader(new InputStreamReader(new FileInputStream("DshstpDistHistory.csv"),"utf-8"));
                 CSVReader csvReader = new CSVReader(reader);
         ) {
             String[] nextRecord;
@@ -720,7 +720,7 @@ public class LoadData {
 
         System.out.println("DslevpDistributorLevels - Start :" + System.currentTimeMillis());
         try (
-                Reader reader = Files.newBufferedReader(Paths.get("DslevpDistributorLevels.csv"), Charset.forName("UTF-8"));
+                Reader reader =  new BufferedReader(new InputStreamReader(new FileInputStream("DslevpDistributorLevels.csv"),"utf-8"));
                 CSVReader csvReader = new CSVReader(reader);
         ) {
             String[] nextRecord;
@@ -768,7 +768,7 @@ public class LoadData {
 
         System.out.println("DspwvpWaiver - Start :" + System.currentTimeMillis());
         try (
-                Reader reader = Files.newBufferedReader(Paths.get("DspwvpWaiver.csv"), Charset.forName("UTF-8"));
+                Reader reader =  new BufferedReader(new InputStreamReader(new FileInputStream("DspwvpWaiver.csv"),"utf-8"));
                 CSVReader csvReader = new CSVReader(reader);
         ) {
             String[] nextRecord;
@@ -816,7 +816,7 @@ public class LoadData {
 
         System.out.println("FlcmppCompanyConfig - Start :" + System.currentTimeMillis());
         try (
-                Reader reader = Files.newBufferedReader(Paths.get("FlcmppCompanyConfig.csv"), Charset.forName("UTF-8"));
+                Reader reader =  new BufferedReader(new InputStreamReader(new FileInputStream("FlcmppCompanyConfig.csv"),"utf-8"));
                 CSVReader csvReader = new CSVReader(reader);
         ) {
             String[] nextRecord;
